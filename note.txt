@@ -1,0 +1,13 @@
+//
+//这个笔记本用于记录学习git的过程中的代码和用处
+//
+//
+git init
+//把当前所在库变为一个git管理的仓库
+//
+git add [file1] [file2]
+//将file1和file2添加到提交缓冲区
+//
+git commit -m "[any message]"
+//将已经在提交缓冲区的内容提交到仓库
+//
