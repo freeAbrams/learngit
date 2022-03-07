@@ -5,10 +5,10 @@
 git init
     //把当前所在库变为一个git管理的仓库
 //
-git add [file1] [file2]
-    //将file1和file2添加到提交暂存区
+git add <file1> <file2>
+    //将file1和file2添加到提交暂存区(stage)
 //
-git commit -m "[any message]"
+git commit -m "<any message>"
     //将已经在【提交暂存区】的内容提交到仓库
 //
 git status
@@ -21,15 +21,27 @@ git log
     //查看git提交记录
     --pretty=one 
         //输出较为简短的信息
+        //
     --graph
         //以时间线图形输出提交记录
+        //
 //
-git reset --hard [commit]
+git reset --hard <commit>
     //恢复为某个版本，HEAD指代当前版本 HEAD^指代上一个版本
     //HEAD^^指代上上个版本，HEAD～n指代n个之前的版本
+    //
 //
 git reflog
     //显示每一次命令，可与reset配合，在回退到过去版本以后再次回退到未来版本
+    //
+//
+git restore <file>
+git checkout -- <file>
+    //把[file]在工作区的修改回退到最近一次add或commit的状态
+    git restore --stage <file>
+    git reset HEAD <file>
+        //将已经在暂存区的文件退回工作区，stage代表暂存区
+        //
     //
 //
 
