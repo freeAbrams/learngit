@@ -60,5 +60,5 @@
         //第一次push的时候使用 -u 来链接本地库和远程库的branch
         //不带参数默认push当前branch
     从远程库clone一个库
-    git clone <repository>
-    
+        git clone <repository>
+        //clone一个库，repository为ssh或https地址
