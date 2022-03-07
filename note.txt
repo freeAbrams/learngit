@@ -62,3 +62,11 @@
     从远程库clone一个库
         git clone <repository>
         //clone一个库，repository为ssh或https地址
+分支管理相关命令
+    创建并切换新branch
+        git branch <branch>
+        git checkout -b <branch>
+    切换到某个branch
+        git checkout <branch>
+    查看branch
+        git branch
