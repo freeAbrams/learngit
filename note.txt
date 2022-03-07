@@ -46,4 +46,19 @@
     git restore <file>
     git checkout -- <file>
     //恢复file，不管是file已经被更改或是删除
-
+远程版本库相关命令
+    远程版本库信息
+        git remote -v
+    将版本库链接到远程
+        git remote add <origin> <repository>
+        //将当前仓库链接到Git服务器上的仓库，
+        //origin代表本地命名的远程仓库，repository为ssh或https地址
+    删除远程版本库链接
+        git remote remove <origin>
+    将commit推送到远程
+        git push (-u) <origin> <branch>
+        //第一次push的时候使用 -u 来链接本地库和远程库的branch
+        //不带参数默认push当前branch
+    从远程库clone一个库
+    git clone <repository>
+    
