@@ -63,10 +63,19 @@
         git clone <repository>
         //clone一个库，repository为ssh或https地址
 分支管理相关命令
-    创建并切换新branch
+    创建新branch
         git branch <branch>
+    创建并切换新branch
+        git switch -c <branch>
         git checkout -b <branch>
     切换到某个branch
         git checkout <branch>
+        git switch <branch>
     查看branch
         git branch
+    重命名当前branch
+        git branch -M <branch>
+    合并某branch到当前branch
+        git merge <branch>
+    删除branch
+        git branch -d <branch>
