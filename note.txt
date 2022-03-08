@@ -79,5 +79,21 @@
         git branch -M <branch>
     合并某branch到当前branch
         git merge <branch>
+        //           D---E---F feature
+        //         /
+        //A---B---C master
+        //          ⬇
+        //           D---E---F feature
+        //         /           master
+        //A---B---C 
+    以--no-ff (NO Fast Forword) 模式合并分支
+        git merge --no-ff -m "message" <branch>
+        //           D---E---F feature
+        //         /
+        //A---B---C master
+        //          ⬇
+        //           D---E---F feature
+        //         /          \
+        //A---B---C------------G master
     删除branch
         git branch -d <branch>
